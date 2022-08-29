@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  outline: unset;
+}
+body {
+  background-color: $black;
+  color: $white;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+.container-wrap {
+  max-width: 1280px;
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+.step {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.step.hidden {
+  display: none;
+}
+h3 {
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  font-style: italic;
+}
+.ancient-items {
+  /*display: grid;
+  grid-template-columns: repeat(4, 1fr);*/
+  display: flex;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 20px;
+}
+.ancient-item {
+  cursor: pointer;
+  border: 2px solid transparent;
+  width: 295px;
+  height: auto;
+}
+.ancient-item.active {
+  border-color: red;
+}
+.difficulty-items {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  justify-content: center;
+}
+.difficulty-item {
+  cursor: pointer;
+  border: 2px solid $white;
+  padding: 10px;
+}
+.difficulty-item.active {
+  border-color: red;
+  color: red;
+  background-color: $white;
+}
+button {
+  background-color: red;
+  color:  $white;
+  cursor: pointer;
+  font: 400 20px 'Roboto', sans-serif;
+  border: 2px solid $white;
+  margin: 0 auto;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+button.hidden {
+  display: none;
+}
+h4 {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 20px 0 5px 0;
+}
+.stage {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 15px;
+}
+.stage-item {
+  border: 1px solid $white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 22px;
+  width: 30px;
+}
+.green {
+  background-color: $green;
+}
+.brown {
+  background-color: $brown;
+}
+.blue {
+  background-color: $blue;
+}
+.step-4 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  column-gap: 70px;
+  row-gap: 40px;
+}
+.deck-back {
+  background: no-repeat center center/cover;
+  cursor: pointer;
+  height: 419px;
+  width: 285px;
+}
+
+.deck-result {
+  background: no-repeat center center/cover;
+  height: 419px;
+  width: 285px;
+}
